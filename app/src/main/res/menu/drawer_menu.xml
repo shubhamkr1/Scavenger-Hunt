@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/home_id"
+            android:title="Home"
+        ></item>
+
+        <item
+            android:id="@+id/reset_id"
+            android:title="Reset"
+            ></item>
+
+        <item
+            android:id="@+id/bookmark_id"
+            android:title="Bookmarks"
+            ></item>
+
+    </group>
+
+</menu>

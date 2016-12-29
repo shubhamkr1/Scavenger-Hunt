@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.tyler.scavengerhunt1.MapsActivity"
+        map:cameraTargetLat="39.167777"
+        map:cameraTargetLng="-86.523197"
+        map:cameraZoom="17"
+        map:mapType="satellite"
+        map:uiZoomControls="true"
+        tools:ignore="MissingPrefix" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#cc3b60a7"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonCurrent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:onClick="onClickCurrent"
+                android:background="@drawable/current" />
+
+            <ImageButton
+                android:id="@+id/buttonSave"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/save" />
+
+
+            <ImageButton
+                android:id="@+id/buttonView"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="15dp"
+                android:onClick="onButtonClickView"
+                android:background="@drawable/view" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
+
+
+    <!--android:background="#cc3b60a7" -->

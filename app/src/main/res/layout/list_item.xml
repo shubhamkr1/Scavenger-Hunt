@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView"
+        android:src ="@drawable/save"/>
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView2"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:src ="@drawable/save" />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2"
+        android:src ="@drawable/save" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView4"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:src="@drawable/alarmclock"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView5"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_toEndOf="@+id/imageView"
+        android:src="@drawable/info"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView6"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_toEndOf="@+id/imageView"
+        android:src="@drawable/takepicture"/>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Add Reminder"
+        android:id="@+id/button"
+        android:textSize="10sp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView4"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Get Info"
+        android:id="@+id/button2"
+        android:textSize="10sp"
+        android:layout_above="@+id/button3"
+        android:layout_alignStart="@+id/button" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Take Picture"
+        android:id="@+id/button3"
+        android:textSize="10sp"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignStart="@+id/button2" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView7"
+        android:layout_marginLeft="65dp"
+        android:src="@drawable/alarmclock"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@+id/button4"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView8"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/info"
+        android:layout_below="@+id/imageView7"
+        android:layout_toStartOf="@+id/button3" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView9"
+        android:layout_marginLeft="65dp"
+        android:src="@drawable/takepicture"
+        android:layout_below="@+id/imageView8"
+        android:layout_marginTop="20dp"
+        android:layout_toStartOf="@+id/button4"
+        android:layout_marginBottom="18dp" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Add Reminder"
+        android:id="@+id/button4"
+        android:textSize="10sp"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignStart="@+id/button3"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Get Info"
+        android:id="@+id/button5"
+        android:textSize="10sp"
+        android:layout_below="@+id/button4"
+        android:layout_alignEnd="@+id/button4" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Take Picture"
+        android:id="@+id/button6"
+        android:textSize="10sp"
+        android:layout_below="@+id/button5"
+        android:layout_alignStart="@+id/button5" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView10"
+        android:layout_marginLeft="65dp"
+        android:src="@drawable/alarmclock"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_toStartOf="@+id/button6"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView11"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/info"
+        android:layout_below="@+id/imageView10"
+        android:layout_toStartOf="@+id/button6" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView12"
+        android:layout_marginLeft="65dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/takepicture"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_toStartOf="@+id/button8" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Add Reminder"
+        android:id="@+id/button7"
+        android:textSize="10sp"
+        android:layout_below="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView10"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Get Info"
+        android:id="@+id/button8"
+        android:textSize="10sp"
+        android:layout_below="@+id/button7"
+        android:layout_toEndOf="@+id/imageView11" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Take Picture"
+        android:id="@+id/button9"
+        android:textSize="10sp"
+        android:layout_below="@+id/button8"
+        android:layout_toEndOf="@+id/imageView12" />
+
+</RelativeLayout>

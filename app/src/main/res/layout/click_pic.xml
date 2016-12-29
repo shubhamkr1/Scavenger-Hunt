@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/backgroundimage">
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Capture image"
+        android:id="@+id/btnCaptureImage"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:id="@+id/imageView2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/tvMsg"
+        android:layout_weight="0.05" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Button"
+        android:id="@+id/btnNext"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnMap"
+        android:background="@drawable/map"
+        android:layout_gravity="right" />
+
+</LinearLayout>
